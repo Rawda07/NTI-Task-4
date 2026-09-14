@@ -1,0 +1,125 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f1e5;
+    color: #2b221e;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f1e5;
+    padding: 25px 60px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2b221e;
+    letter-spacing: 1.5px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar .nav-links li {
+    list-style: none;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #5c4b43;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #c59b52; 
+}
+
+/* Header (Hero Section) Styling */
+.header-hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url('../images/background.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin: 20px 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.hero-content {
+    padding: 20px;
+}
+
+.header-hero h1 {
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.6);
+    font-family: 'Georgia', serif; 
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.header-hero p {
+    font-size: 18px; 
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.5); 
+    color: #fff;
+}
+
+/* Products Page External Styles */
+.active-link {
+    color: #c59b52 !important;
+}
+
+.products-title {
+    color: #2b221e;
+    font-weight: bold;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-name {
+    color: #2b221e;
+}
+
+.price-tag {
+    color: #c59b52;
+    font-size: 17px;
+    margin-bottom: 0;
+}
